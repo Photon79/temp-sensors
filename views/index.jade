@@ -1,0 +1,53 @@
+#messages
+#sensor1.sensor(data-bind="with:sensor1")
+    h3.title(style='margin-bottom: 20px;')
+        span.title(data-bind='html:name')
+        input(name='name')
+        button(onclick='change(this);', class='sensor1') Change
+    .value
+        .minus
+        .plus
+        .pos(style='left: 50%; line-height: 30px;') #
+        .val(data-bind='html:value')
+        .left -50&deg;
+        .right 50&deg;
+    .time Last updated:
+        span(data-bind='html:timestamp')
+    .change
+        input(name='value')
+        button(onclick='change(this);', class='sensor1')  Change value
+ #sensor2.sensor(data-bind="with:sensor2")
+    h3.title(style='margin-bottom: 20px;')
+        span.title(data-bind='html:name')
+        input(name='name')
+        button(onclick='change(this);', class='sensor2') Change
+    .value
+        .minus
+        .plus
+        .pos(style='left: 50%; line-height: 30px;') #
+        .val(data-bind='html:value')
+        .left -50&deg;
+        .right 50&deg;
+    .time Last updated:
+        span(data-bind='html:timestamp')
+    .change
+        input(name='value')
+        button(onclick='change(this);', class='sensor2') Change value
+#sensor3.sensor(data-bind="with:sensor3")
+    h3.title(style='margin-bottom: 20px;')
+        span.title(data-bind='html:name')
+        input(name='name')
+        button(onclick='change(this);', class='sensor3') Change
+    .value
+        .minus
+        .plus
+        .pos(style='left: 50%; line-height: 30px;') #
+        .val(data-bind='html:value')
+        .left -50&deg;
+        .right 50&deg;
+    .time Last updated:
+        span(data-bind='html:timestamp')
+    .change
+        input(name='value')
+        button(onclick='change(this);', class='sensor3') Change value
+

@@ -1,0 +1,88 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.sensor {
+  width: 80%;
+  margin: 0 auto 15px auto;
+  clear: both;
+}
+.value {
+  position: relative;
+}
+.minus {
+  float: left;
+  height: 30px;
+  width: 50%;
+  background: -moz-linear-gradient(right,#fff,#0000ff);
+  background: -webkit-gradient(linear, right top, left top, from(#fff), to(#0000ff));  
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#0000ff,endColorstr=#ffffff,GradientType=1); zoom: 1;
+  background: linear-gradient(right,#fff,#0000ff);
+}
+.plus {
+  float: left;
+  height: 30px;
+  width: 50%;
+  background: -moz-linear-gradient(left,#fff,#ff0000);
+  background: -webkit-gradient(linear, left top, right top, from(#fff), to(#ff0000));  
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#ffffff,endColorstr=#ff0000,GradientType=1); zoom: 1;
+  background: linear-gradient(left,#fff,#ff0000);
+}
+.pos {
+  position: absolute;
+  line-height: 30px;
+  left: 50%;
+  z-index: 10;
+}
+.val {
+  position: absolute;
+  left: 50%;
+  top: -20px;
+  z-index: 10;
+}
+.left {
+  position: absolute;
+  left: -30px;
+  top: 0;
+  line-height: 30px;
+}
+.right {
+  position: absolute;
+  right: -30px;
+  top: 0;
+  line-height: 30px;
+}
+/* Popup messages */
+#messages {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 0px;
+  z-index: 2000;
+}
+#messages div {
+  position: relative;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  width: 556px;
+  padding: 20px;
+  font-size: 14px;
+  text-align: left;
+}
+#messages .error {
+  border: 2px solid #EF901F;
+  background-color: #E9CB5D;
+}
+#messages .success {
+  border: 2px solid #1A5983;
+  background-color: #2084C6;
+  color: #ffffff;
+}
